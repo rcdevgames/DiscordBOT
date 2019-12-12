@@ -2,7 +2,7 @@ import Bot from './src/bot'
 import fs from 'fs';
 import path, { resolve, extname } from 'path'
 
-const BotInstance = new Bot("__TOKEN__");
+const BotInstance = new Bot("MzM0MDk2NTIzOTEyNTQ0MjU3.XedPUg.1hfHA6vGk90Vjuj9-KYHgIvGPq4");
 console.log(process.env)
 const CommandsPath = path.join(resolve(__dirname, 'src', 'commands'))
 
