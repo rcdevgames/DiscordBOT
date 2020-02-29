@@ -1,8 +1,9 @@
 const Discord = require('discord.js')
+const { Client } = require('whatsapp-web.js');
 
 class BOT {
     constructor(token) {
-
+        this.clientWp = new Client()
         this.token = token;
         this.client = new Discord.Client()
         this.setup();
@@ -29,6 +30,7 @@ class BOT {
 
     setup() {
         this.client.login(this.token);
+        this.clientWp.initialize();
         console.log('Bot is now connected!');
     }
 
